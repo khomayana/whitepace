@@ -1,0 +1,219 @@
+.price {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    text-align: center;
+
+    &__box {
+        max-width: 472px;
+        overflow: hidden;
+    }
+
+
+    &__title {
+        padding-bottom: 24px;
+        padding-right: 5px;
+        padding-left: 5px;
+        background-image: url(../img/price-line-mb.png);
+        background-repeat: no-repeat;
+        background-position-y: 70px;
+        background-position-x: 100px;
+    }
+
+    &__text {
+        padding-bottom: 60px;
+    }
+
+    &__item-sm {
+        text-align: start;
+        margin-top: 63px;
+        margin-bottom: 63px;
+        border: 1px solid #FFE492;
+        border-radius: 10px;
+        padding: 20px;
+        margin-right: 10px;
+
+
+        &-value {
+            display: block;
+            font-size: 36px;
+            line-height: 1.22em;
+            font-weight: 700;
+            letter-spacing: -0.72px;
+            color: #212529;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+
+        &-text {
+            color: #212529;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.25em;
+            letter-spacing: -0.32px;
+        }
+
+        &-list {
+            list-style: none;
+            padding-left: 0;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.25em;
+            letter-spacing: -0.32px;
+            color: #212529;
+            padding-top: 25px;
+
+        }
+
+        &-wrapper {
+            margin-bottom: 40px;
+        }
+
+
+        li {
+            background-image: url(../img/price-icon-black.png);
+            background-position-x: 0px;
+            background-repeat: no-repeat;
+            padding-left: 40px;
+        }
+
+        li:not(:last-child) {
+            padding-bottom: 28px;
+        }
+
+        li:last-child {
+            padding-bottom: 41px;
+        }
+    }
+
+    &__item-lg {
+        text-align: start;
+        background: #043873;
+        box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.08);
+        border-radius: 10px;
+        padding: 20px;
+        margin-right: 10px;
+
+
+        &-value {
+            display: block;
+            font-size: 36px;
+            line-height: 1.22em;
+            font-weight: 700;
+            letter-spacing: -0.72px;
+            color: #FFE492;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+
+        &-text {
+            color: #FFF;
+            font-size: 16px;
+            line-height: 1.25em;
+            letter-spacing: -0.36px;
+        }
+
+        &-list {
+            list-style: none;
+            padding-left: 0;
+            font-size: 16px;
+            line-height: 1.25em;
+            letter-spacing: -0.36px;
+            color: #FFF;
+            padding-top: 25px;
+
+        }
+
+        &-wrapper {
+            margin-bottom: 40px;
+        }
+
+        li {
+            background-image: url(../img/price-icon.png);
+            background-position-x: 0px;
+            background-repeat: no-repeat;
+            padding-left: 40px;
+        }
+
+        li:not(:last-child) {
+            padding-bottom: 28px;
+        }
+
+        li:last-child {
+            padding-bottom: 41px;
+        }
+
+    }
+}
+
+@media (min-width:768px) {
+    .price {
+
+        &__title {
+            padding-bottom: 24px;
+            background-image: url(../img/price-line-tb.png);
+            background-position-y: 39px;
+            background-position-x: 358px;
+        }
+
+        &__item-sm {
+            padding: 40px 44px;
+        }
+
+        &__item-lg {
+            padding: 80px 44px 96px;
+        }
+    }
+
+}
+
+@media (min-width: 1152px) {
+    .price {
+        &__title {
+            padding-bottom: 24px;
+            background-image: url(../img/price-line-1152.png);
+            background-position-y: 49px;
+            background-position-x: 558px;
+        }
+
+        &__item-lg {
+
+            &-text {
+                font-size: 18px;
+                font-weight: 500;
+                letter-spacing: -0.36px;
+            }
+
+            &-list {
+                font-size: 18px;
+                font-weight: 500;
+                letter-spacing: -0.36px;
+                color: #FFF;
+                padding-top: 25px;
+
+            }
+        }
+    }
+
+}
+
+@media (min-width: 1400px) {
+    .price {
+        &__title {
+            // padding-bottom: 24px;
+            background-image: url(../img/price-line-1400.png);
+            background-position-y: 57px;
+            background-position-x: 677px;
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    .price {
+        &__title {
+            // padding-bottom: 24px;
+            background-image: url(../img/price-line-1400.png);
+            background-position-y: 53px;
+            background-position-x: 735px;
+        }
+    }
+}

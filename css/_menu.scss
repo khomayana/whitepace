@@ -1,0 +1,130 @@
+.menu {
+    &__btn {
+        display: block;
+        padding: 0;
+        cursor: pointer;
+        height: 24px;
+        width: 42px;
+        position: relative;
+        background-color: transparent;
+        border: none;
+
+        span,
+        span:before,
+        span:after {
+            background: #FFF;
+            height: 2px;
+            width: 100%;
+            position: absolute;
+            display: block;
+        }
+
+        span:before,
+        span:after {
+            content: '';
+        }
+
+        span:before {
+            top: -12px;
+        }
+
+        span:after {
+            top: 12px;
+        }
+
+        &_active {
+            outline: none;
+
+            span:before {
+                top: 0px;
+                transform: rotate(90deg);
+                width: 42px;
+            }
+
+            span {
+                transform: rotate(-45deg);
+                width: 42px;
+            }
+
+            span:after {
+                top: 0px;
+                left: 0;
+                transform: rotate(90deg);
+                opacity: 0;
+                width: 0;
+            }
+        }
+    }
+
+    &__list {
+        padding: 30px 0 50px;
+        display: none;
+        list-style: none;
+        padding-left: 0;
+        position: absolute;
+        left: 0;
+        top: 86px;
+        width: 100%;
+        background: #043873;
+        text-align: center;
+
+        &_show {
+            display: block;
+        }
+
+        li {
+            &:not(:last-child) {
+                margin-bottom: 32px;
+            }
+        }
+
+        a {
+            display: block;
+            color: #FFF;
+            font-size: 18px;
+            line-height: 23px;
+            text-decoration: none;
+            margin: 0 auto;
+
+        }
+    }
+}
+
+@media (min-width:1152px) {
+    .menu {
+        &__btn {
+            margin-left: 20px;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .menu {
+        &__btn {
+            display: none;
+        }
+
+        &__list {
+            margin-right: 95px;
+            display: flex;
+            gap: 51px;
+            position: inherit;
+            padding: 0;
+
+            li {
+                &:not(:last-child) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1520px) {
+    .menu {
+        &__list {
+            gap: 71px;
+            margin-right: 135px;
+        }
+    }
+}

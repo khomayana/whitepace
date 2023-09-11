@@ -1,0 +1,34 @@
+.btn {
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 23px;
+
+
+    &_blue {
+        background-color: #4F9CF9;
+        color: #fff;
+    }
+
+    &_white {
+        border: 1px solid #FFE492;
+        background: #FFF;
+        color: #212529;
+    }
+
+    &_sm {
+        padding: 16px 40px;
+    }
+
+    &_md {
+        padding: 20px 40px;
+    }
+
+
+
+
+}

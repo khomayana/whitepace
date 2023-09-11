@@ -1,0 +1,30 @@
+.try-wp {
+    text-align: center;
+    background-color: #043873;
+    padding-top: 100px;
+    padding-bottom: 32px;
+
+    &__title {
+        padding-bottom: 24px;
+    }
+
+    &__btn {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    &__logo {
+        padding-top: 40px;
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+
+        a:hover path {
+            fill: #ddd965;
+        }
+    }
+}
